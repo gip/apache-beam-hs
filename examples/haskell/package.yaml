@@ -1,0 +1,21 @@
+name:                apache-beam-examples
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/gip/apache-beam-hs
+license:             Apache-2.0
+author:              Giles Pirio
+maintainer:          example@example.com
+copyright:           2018 Giles Pirio
+category:            Database
+
+dependencies:
+  - base >= 4.7 && < 5
+  - apache-beam-sdk
+  - mtl
+  - regex-posix
+
+executables:
+  apache-beam-examples:
+    source-dirs:      src
+    main:             Main.hs

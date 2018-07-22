@@ -1,0 +1,26 @@
+name:                apache-beam-sdk
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/gip
+license:             Apache-2.0
+author:              Giles Pirio
+maintainer:          example@example.com
+copyright:           2018 Giles Pirio
+category:            Database
+
+dependencies:
+  - base >= 4.7 && < 5
+  - mtl
+
+library:
+  source-dirs: src
+
+tests:
+  apache-beam-sdk-test:
+    source-dirs: test
+    dependencies:
+      - apache-beam-sdk
+      - tasty
+      - tasty-hunit
+    main: Main.hs
